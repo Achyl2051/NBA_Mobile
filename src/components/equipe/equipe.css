@@ -1,0 +1,25 @@
+body{
+    overflow: scroll;
+}
+.myContent,
+.myPage{
+    overflow: scroll;
+    background-color: red;
+
+
+}
+.playerList{
+    background-color: rgb(247, 247, 247);
+    margin: 1rem;
+    overflow: scroll;
+
+}
+
+.playerList th,
+.playerList td{
+    padding: .3rem .3rem;
+    border: transparent 1px solid;
+    border-bottom: grey 1px solid;
+
+}
+
