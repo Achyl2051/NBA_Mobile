@@ -3,9 +3,15 @@ import React, { useState, useEffect } from 'react';
 import { IonList, IonItem, IonLabel, IonContent, IonRouterLink } from '@ionic/react';
 import axios from 'axios';
 
+interface Team {
+  id: number;
+  nom: string;
+  diminutif: string;
+}
+
 
 const Liste: React.FC = () => {
-  const [teams, setTeams] = useState([]);
+  const [teams, setTeams] = useState<Team[]>([]);
 
   // useEffect(() => {
   //   // Aucun appel API nécessaire car les données sont déjà incluses
